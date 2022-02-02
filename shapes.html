@@ -4,30 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shapes.css">
     <title>Geometric shapes</title>
 </head>
 <body>
     <header>
         <h1>Geometric shapes</h1>
     </header>
-    <section>
-        <h2>Calcula el area y el perimetro de un cuadrado</h2>
-        <form>
-            <label for="SquareInput">
-                Escribe cuanto mide el lado de tu cuadrado:
-            </label>
+    <main class="cards_container">
+        <section class="card_section">
+            <h2>Calcula el area y el perimetro de un cuadrado</h2>
+            <form>
+                <label for="square_input">
+                    Escribe cuanto mide el lado de tu cuadrado:
+                </label>
 
-            <input id="SquareInput" type="number" />
-            <button type="button" onclick="calculateSquarePerimeter()">
-                Calcular perimetro
-            </button>
-            <button type="button" onclick="calculateSquareArea()">
-                Calcular area
-            </button>
-        </form>
-    </section>
-
+                <input id="square_input" type="number" />
+                <div class="button_holder">
+                    <button class="calc_button" type="button" onclick="calculateSquarePerimeter()">
+                        Calcular perimetro
+                    </button>
+                    <button class="calc_button" type="button" onclick="calculateSquareArea()">
+                        Calcular area
+                    </button>
+                </div>
+            </form>
+        </section>
+        <section class="card_section">
+            <h2>Calcula el area y el perimetro de un triangulo isosceles</h2>
+            <form>
+                <label for="TriangleSideA">
+                    Escribe cuanto mide el lado A del triangulo:
+                </label>
+                <input id="TriangleSideA" type="number" />
+                <label for="TriangleSideB">
+                    Escribe cuanto mide el lado B del triangulo:
+                </label>
+                <input id="TriangleSideB" type="number" />
+                <label for="TriangleBase">
+                    Escribe cuanto mide la base del triangulo:
+                </label>
+                <input id="TriangleBase" type="number" />
+                <div class="button_holder">
+                    <button class="calc_button" type="button" onclick="calculateTrianglePerimeter()">
+                        Calcular perimetro
+                    </button>
+                    <button class="calc_button" type="button" onclick="calculateTriangleArea()">
+                        Calcular area
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
 
     <script src="shapes.js"></script>
-</body>
 </html>

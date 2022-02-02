@@ -1,0 +1,62 @@
+:root {
+    --blue: #008CBA;
+    --green: hsl(169, 76%, 46%);
+    --gray: #96979b10;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+
+
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.cards_container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 10vh;
+}
+
+.card_section  {
+    display: flex;
+    flex-direction: column;    
+    width: 20vw;
+    background-color: var(--gray);
+    bac
+    margin: 5vh;
+    padding: 3vh;
+    border-radius: 2vh;
+    border-color: black;
+    border-width: 20px;
+}
+
+.button_holder {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.calc_button {
+    border: none;
+    border-radius: 5rem;
+    padding: 1em;
+    background-color: var(--blue);
+    text-shadow: var(--blue);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
